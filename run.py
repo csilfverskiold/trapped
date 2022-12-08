@@ -7,10 +7,8 @@ def game_intro():
     print("to the game and let them start the game by requested")
     print("input data. <<<\n")
 
-    input("Hit 1 and press ENTER to move forward: ")
-
     while True:
-        move_forward = input()
+        move_forward = input("Hit 1 and press ENTER to move forward: ")
         try:
             if int(move_forward) == 1:
                 print("")
@@ -20,6 +18,31 @@ def game_intro():
                 print("Invalid number, hit 1 and ENTER")
         except ValueError:
             print("Value must be whole number, hit 1 and ENTER")
+
+
+def validate_data():
+    """
+    Validates player data input
+    """
+    while True:
+        choice = input("Enter choice: ")
+        try:
+            if int(choice) == 1:
+                print("")
+                print("Player chose option 1")
+                break
+            elif int(choice) == 2:
+                print("")
+                print("Player chose option 2")
+                break
+            else:
+                print("")
+                print("Invalid number, 1 or 2")
+                print("")
+        except ValueError:
+            print("")
+            print("Value must be a whole number, 1 or 2")
+            print("")
 
 
 def trap_1():
@@ -33,7 +56,7 @@ def trap_1():
     print("2 - Choose that option")
     print("")
 
-    input("Enter choice: ")
+    validate_data()
 
 
 def trap_2():
@@ -47,7 +70,7 @@ def trap_2():
     print("2 - Choose that option")
     print("")
 
-    input("Enter choice: ")
+    validate_data()
 
 
 def trap_3():
@@ -61,7 +84,7 @@ def trap_3():
     print("2 - Choose that option")
     print("")
 
-    input("Enter choice: ")
+    validate_data()
 
 
 def trap_4():
@@ -75,7 +98,7 @@ def trap_4():
     print("2 - Choose that option")
     print("")
 
-    input("Enter choice: ")
+    validate_data()
 
 
 def trap_5():
@@ -89,7 +112,7 @@ def trap_5():
     print("2 - Choose that option")
     print("")
 
-    input("Enter choice: ")
+    validate_data()
 
 
 game_intro()
@@ -98,3 +121,11 @@ trap_2()
 trap_3()
 trap_4()
 trap_5()
+
+
+"""
+- Write function that validates data in each trap -
+- Write function that knows which options are CORRECT and INCORRECT -
+- Write function that loops if player chooses CORRECT or INCORRECT -
+- Write function with dictionary that collects other functions -
+"""
