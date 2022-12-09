@@ -152,10 +152,7 @@ def trap_5():
     choice = validate_data()
 
     if choice == 2:
-        print("")
-        print("OH YEAH, YOU ESCAPED!")
-        print("")
-        # function to send player back to game intro
+        game_end()
     else:
         print("")
         print("Oh no, wrong choice! You died, restarting game.")
@@ -163,10 +160,25 @@ def trap_5():
         game_intro()
 
 
-game_intro()
+def game_end():
+    """
+    DOCSTRING for GAME_END
+    """
+    print("")
+    print(">>> Placeholder text for GAME_END telling player they")
+    print("escaped. <<<\n")
+    print("1 - Choose this option")
+    print("2 - Choose that option")
+    print("")
 
-"""
-- Write function that knows which options are CORRECT and INCORRECT -
-- Write function that loops if player chooses CORRECT or INCORRECT -
-- Write function with dictionary that collects other functions -
-"""
+    choice = validate_data()
+
+    if choice == 1:
+        game_intro()
+    else:
+        print("")
+        print("Goodbye!")
+        exit()
+
+
+game_intro()
