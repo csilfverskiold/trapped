@@ -9,11 +9,12 @@ def game_intro():
 
     while True:
         move_forward = input("Press 1 and hit ENTER to move forward:\n")
+        # Input data to start game
         try:
             if int(move_forward) == 1:
                 print("")
                 print("Moving FORWARD")
-                break
+                trap_1()
             else:
                 print("")
                 print("Invalid number, hit 1 and ENTER")
@@ -34,11 +35,11 @@ def validate_data():
             if int(choice) == 1:
                 print("")
                 print("Player chose option 1")
-                break
+                return 1
             elif int(choice) == 2:
                 print("")
                 print("Player chose option 2")
-                break
+                return 2
             else:
                 print("")
                 print("Invalid number, 1 or 2")
@@ -60,16 +61,15 @@ def trap_1():
     print("2 - Choose that option")
     print("")
 
-    """choice = input()
-    answer = ["1"]
+    choice = validate_data()
 
-    if choice in answer:
+    if choice == 1:
         trap_2()
     else:
+        print("")
         print("Oh no, wrong choice! You died, restarting game.")
-    # Need to add a function that exits and restarts from game_intro()"""
-
-    validate_data()
+        print("")
+        game_intro()
 
 
 def trap_2():
@@ -83,7 +83,15 @@ def trap_2():
     print("2 - Choose that option")
     print("")
 
-    validate_data()
+    choice = validate_data()
+
+    if choice == 1:
+        trap_3()
+    else:
+        print("")
+        print("Oh no, wrong choice! You died, restarting game.")
+        print("")
+        game_intro()
 
 
 def trap_3():
@@ -97,7 +105,15 @@ def trap_3():
     print("2 - Choose that option")
     print("")
 
-    validate_data()
+    choice = validate_data()
+
+    if choice == 2:
+        trap_4()
+    else:
+        print("")
+        print("Oh no, wrong choice! You died, restarting game.")
+        print("")
+        game_intro()
 
 
 def trap_4():
@@ -111,7 +127,15 @@ def trap_4():
     print("2 - Choose that option")
     print("")
 
-    validate_data()
+    choice = validate_data()
+
+    if choice == 2:
+        trap_5()
+    else:
+        print("")
+        print("Oh no, wrong choice! You died, restarting game.")
+        print("")
+        game_intro()
 
 
 def trap_5():
@@ -125,16 +149,21 @@ def trap_5():
     print("2 - Choose that option")
     print("")
 
-    validate_data()
+    choice = validate_data()
+
+    if choice == 2:
+        print("")
+        print("OH YEAH, YOU ESCAPED!")
+        print("")
+        # function to send player back to game intro
+    else:
+        print("")
+        print("Oh no, wrong choice! You died, restarting game.")
+        print("")
+        game_intro()
 
 
 game_intro()
-trap_1()
-trap_2()
-trap_3()
-trap_4()
-trap_5()
-
 
 """
 - Write function that knows which options are CORRECT and INCORRECT -
