@@ -8,16 +8,20 @@ def game_intro():
     print("input data. <<<\n")
 
     while True:
-        move_forward = input("Hit 1 and press ENTER to move forward: ")
+        move_forward = input("Press 1 and hit ENTER to move forward:\n")
         try:
             if int(move_forward) == 1:
                 print("")
                 print("Moving FORWARD")
                 break
             else:
+                print("")
                 print("Invalid number, hit 1 and ENTER")
+                print("")
         except ValueError:
+            print("")
             print("Value must be whole number, hit 1 and ENTER")
+            print("")
 
 
 def validate_data():
@@ -25,7 +29,7 @@ def validate_data():
     Validates player data input
     """
     while True:
-        choice = input("Enter choice: ")
+        choice = input("Enter choice:\n")
         try:
             if int(choice) == 1:
                 print("")
@@ -55,6 +59,15 @@ def trap_1():
     print("1 - Choose this option")
     print("2 - Choose that option")
     print("")
+
+    """choice = input()
+    answer = ["1"]
+
+    if choice in answer:
+        trap_2()
+    else:
+        print("Oh no, wrong choice! You died, restarting game.")
+    # Need to add a function that exits and restarts from game_intro()"""
 
     validate_data()
 
@@ -124,7 +137,6 @@ trap_5()
 
 
 """
-- Write function that validates data in each trap -
 - Write function that knows which options are CORRECT and INCORRECT -
 - Write function that loops if player chooses CORRECT or INCORRECT -
 - Write function with dictionary that collects other functions -
