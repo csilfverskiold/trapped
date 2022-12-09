@@ -1,3 +1,6 @@
+import time
+
+
 def game_intro():
     """
     Game introduction and opening scene requesting data input
@@ -57,6 +60,7 @@ def trap_1():
     print("")
     print(">>> Placeholder text for TRAP 1 telling player about two")
     print("options to choose. <<<\n")
+    time.sleep(2)
     print("1 - Choose this option")
     print("2 - Choose that option")
     print("")
@@ -79,6 +83,7 @@ def trap_2():
     print("")
     print(">>> Placeholder text for TRAP 2 telling player about two")
     print("options to choose. <<<\n")
+    time.sleep(2)
     print("1 - Choose this option")
     print("2 - Choose that option")
     print("")
@@ -101,6 +106,7 @@ def trap_3():
     print("")
     print(">>> Placeholder text for TRAP 3 telling player about two")
     print("options to choose. <<<\n")
+    time.sleep(2)
     print("1 - Choose this option")
     print("2 - Choose that option")
     print("")
@@ -123,6 +129,7 @@ def trap_4():
     print("")
     print(">>> Placeholder text for TRAP 4 telling player about two")
     print("options to choose. <<<\n")
+    time.sleep(2)
     print("1 - Choose this option")
     print("2 - Choose that option")
     print("")
@@ -145,6 +152,7 @@ def trap_5():
     print("")
     print(">>> Placeholder text for TRAP 5 telling player about two")
     print("options to choose. <<<\n")
+    time.sleep(2)
     print("1 - Choose this option")
     print("2 - Choose that option")
     print("")
@@ -167,6 +175,7 @@ def game_end():
     print("")
     print(">>> Placeholder text for GAME_END telling player they")
     print("escaped. <<<\n")
+    time.sleep(2)
     print("1 - Choose this option")
     print("2 - Choose that option")
     print("")
