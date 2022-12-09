@@ -3,9 +3,9 @@ import time
 
 def game_intro():
     """
-    Game introduction and opening scene requesting data input
+    Game introduction and opening scene requesting data input.
     """
-    print("-^-^-^- Trapped! -^-^-^-")
+    print("--^-^-^-^-^------^-^-^-^-^-- Trapped! --^-^-^-^-^------^-^-^-^-^--")
     print(">>> This placeholder text will introduce the player")
     print("to the game and let them start the game by requested")
     print("input data. <<<\n")
@@ -16,7 +16,7 @@ def game_intro():
         try:
             if int(move_forward) == 1:
                 print("")
-                print("Moving FORWARD")
+                print("Moving FORWARD  Trapped! -^-^-^-")
                 trap_1()
             else:
                 print("")
@@ -30,7 +30,7 @@ def game_intro():
 
 def validate_data():
     """
-    Validates player data input
+    Validates player data input.
     """
     while True:
         choice = input("Enter choice:\n")
@@ -55,12 +55,14 @@ def validate_data():
 
 def trap_1():
     """
-    DOCSTRING for TRAP 1
+    First scenario player encounters. Sets the scene.
+    Based on input, player either advances to next scenario
+    or game over and restart game.
     """
     print("")
     print(">>> Placeholder text for TRAP 1 telling player about two")
     print("options to choose. <<<\n")
-    time.sleep(2)
+    time.sleep(1)
     print("1 - Choose this option")
     print("2 - Choose that option")
     print("")
@@ -78,12 +80,14 @@ def trap_1():
 
 def trap_2():
     """
-    DOCSTRING for TRAP 2
+    Second scenario player encounters. Sets the scene.
+    Based on input, player either advances to next scenario
+    or game over and restart game.
     """
     print("")
     print(">>> Placeholder text for TRAP 2 telling player about two")
     print("options to choose. <<<\n")
-    time.sleep(2)
+    time.sleep(1)
     print("1 - Choose this option")
     print("2 - Choose that option")
     print("")
@@ -101,12 +105,14 @@ def trap_2():
 
 def trap_3():
     """
-    DOCSTRING for TRAP 3
+    Third scenario player encounters. Sets the scene.
+    Based on input, player either advances to next scenario
+    or game over and restart game.
     """
     print("")
     print(">>> Placeholder text for TRAP 3 telling player about two")
     print("options to choose. <<<\n")
-    time.sleep(2)
+    time.sleep(1)
     print("1 - Choose this option")
     print("2 - Choose that option")
     print("")
@@ -124,12 +130,14 @@ def trap_3():
 
 def trap_4():
     """
-    DOCSTRING for TRAP 4
+    Fourth scenario player encounters. Sets the scene.
+    Based on input, player either advances to next scenario
+    or game over and restart game.
     """
     print("")
     print(">>> Placeholder text for TRAP 4 telling player about two")
     print("options to choose. <<<\n")
-    time.sleep(2)
+    time.sleep(1)
     print("1 - Choose this option")
     print("2 - Choose that option")
     print("")
@@ -147,12 +155,14 @@ def trap_4():
 
 def trap_5():
     """
-    DOCSTRING for TRAP 5
+    Fifth scenario player encounters. Sets the scene.
+    Based on input, player either advances to next scenario
+    or game over and restart game.
     """
     print("")
     print(">>> Placeholder text for TRAP 5 telling player about two")
     print("options to choose. <<<\n")
-    time.sleep(2)
+    time.sleep(1)
     print("1 - Choose this option")
     print("2 - Choose that option")
     print("")
@@ -170,12 +180,12 @@ def trap_5():
 
 def game_end():
     """
-    DOCSTRING for GAME_END
+    Game ending. Based on input, player either restarts or exits game.
     """
     print("")
     print(">>> Placeholder text for GAME_END telling player they")
     print("escaped. <<<\n")
-    time.sleep(2)
+    time.sleep(1)
     print("1 - Choose this option")
     print("2 - Choose that option")
     print("")
